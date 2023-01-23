@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Style Collection</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- header tag for header of the website -->
+        <header id="mainHeader">
+            <div id="logo">
+                <!-- main heading -->
+                <h1>Life Style Collection <h1>
+                <!-- sub heading -->
+                <h4>The joy of having the best clothing!</h4>
+            </div>
+        </header>
+        <!-- main content of the website -->
+        <main>
+            <!-- div is for form container-->
+            <div id="formContainer">
+                <form name="myForm" method="Post" onsubmit="return formCheckout();" action="">
+                    <!-- form created using div row and column concept -->
+                    <div class="row">
+                        <div class="col-1">
+                            <label id="nameText" class="col1Labels">Name 
+                                
+                            </label>
+                            <input id="userName" type="text" name="userName" placeholder="First Last" >
+                        </div>
+                        <div class="col-2 ">
+                            <label id="textTshirt" class="col2Labels">Woman T-Shirt</label><span style="    margin-left: -47px;" id="tshirtPrice">($7.99)</span>
+                            
+                            <input id="tShirtsQuantity" type="text" name="tShirtsQuantity" placeholder="10">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 ">
+                            <label id="userPhone" class="col1Labels">Phone
+                                
+                            </label>
+                            <input id="phone" type="text" name="phone" placeholder="XXXXXXXXXX">
+                    
+                        </div>
+                        <div class="col-2">
+                            <label id="textJeans" class="col2Labels">Denim Jeans
+                            </label><span style="margin-left: -58px;" id="jeanPrice">($20.00)</span> 
+                           
+                            <input id="jeansQuantity" type="text" name="jeansQuantity" placeholder="10">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label class="col1Labels">Credit Card Number</label>
+                            <input id="creditCardNum" type="text" name="creditCardNum" placeholder="XXXX-XXXX-XXXX-XXXX" >
+                        </div>
+                        <div class="col-2">
+                            <label id="textHoodies" class="col2Labels">Hoodies </label><span style="margin-left: -89px;" id="hoodiesPrice">($24.99)</span>
+                            <input id="hoodiesQuantity" type="text" name="hoodiesQuantity" placeholder="10">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label class="col1Labels">Credit Card Expiry Month</label>
+                            <input id="expiryMonth" type="text" name="expiryMonth" placeholder="XX" >
+                        </div>
+                        <div class="col-2">
+                            <label id="textSShirt" class="col2Labels">Sweat Shirts </label><span style="margin-left: -61px;" id="sweatShirtPrice">($9.99)</span>
+                            <input id="sweatShirtsQuantity" type="text" name="sweatShirtsQuantity" placeholder="10">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label class="col1Labels">Credit Card Expiry Year</label>
+                            <input id="expiryYear" type="text" name="expirYear" placeholder="YYYY" >
+                        </div>
+                        <div class="col-2">
+                            <label id="textJacket" class="col2Labels">Puffer Jackets</label><span style="margin-left: -51px;"  id="jacketPrice">($55.99)</span> 
+                            <input id="jacketsQuantity" type="text" name="jacketsQuantity" placeholder="10">
+                        </div>
+                        
+                    </div>
+                    <!-- checkout button div -->
+                    <div class="checkoutBtn">
+                        <button type="submit" id="checkout">Checkout</button>
+                    </div>
+                    <div class="allError">
+                        <p id="errors"></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Receipt Container -->
+            <div id="receiptContainer">
+                <!-- heading for receipt will display in this div with field name and phone number -->
+                <div id="receiptHeading">
+
+                </div>
+                <!-- receipt main content with all the calculation will display in below div -->
+                <div id="receiptMainContent">
+                   
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
